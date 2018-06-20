@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by EntitiesBuilder.
+ * User: padbrain
+ * Date: {CREATED_DATE}
+ */
+
+namespace Dao;
+
+use Core\Dao;
+
+class Dao{CLASSNAME} extends Dao
+{
+    public $table = "{TABLE}";
+}

@@ -1,13 +1,17 @@
 <?php
-namespace BWB\Framework\mvc;
 /**
- * Cette interface fourni les methodes pour la manipulation
- * des collections d'objets
- * @author beweb-loic
+ * Created by PhpStorm.
+ * User: padbrain
+ * Date: 29/05/18
+ * Time: 11:36
  */
-interface RepositoryInterface {
-    
-    public function getAll();
-    
-    public function getAllBy($filter);
+
+namespace BWB\Framework\mvc;
+
+use BWB\Framework\mvc\Models\EntityModel;
+
+interface RepositoryInterface
+{
+    public function getAll(EntityModel $pPointer);
+    public function getAllBy(array $pPropVal);
 }

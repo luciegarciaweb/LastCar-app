@@ -1,0 +1,53 @@
+<?php
+/**
+ * Created by EntitiesBuilder.
+ * User: padbrain
+ * Date: {CREATED_DATE}
+ */
+
+namespace Models;
+
+use Models\EntityModel;
+
+class {CLASSNAME} extends EntityModel
+{
+{DECLARATIONS}
+
+    /*
+     *      GETTERS
+     */
+
+{GETTERS}
+
+    /*
+     *      SETTERS
+     */
+
+{SETTERS}
+
+
+
+    /*
+     *      CRUD TO SEND CUSTOMIZED EXCEPTIONS FROM FAILED QUERIES
+     */
+    public function Create() {
+        $response = parent::Create();
+        if($response == 0 ):
+            throw new \Exception("La création de '{CLASSNAME}' n'a pas pu être effectuée !");
+        else:
+            return $response;
+        endif;
+    }
+
+    public function retrieve(){
+        //   put your code here
+    }
+
+    public function update(){
+        //   put your code here
+    }
+
+    public function delete(){
+        //   put your code here
+    }
+}

@@ -3,6 +3,6 @@
         
     </head>
     <body>
-        <h1> FRAMEWORK MVC PHP beWeb </h1>
+        <h1> Last-Car default page </h1>
     </body>
 </html>
