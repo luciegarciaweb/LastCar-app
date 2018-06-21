@@ -46,7 +46,8 @@ class Routing {
 
     function __construct() {
         $this->config = json_decode(
-                file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/config/routing.json")
+//                file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/config/routing.json")
+                file_get_contents(ROOT . "/config/routing.json")
                 , true
         );
         $this->args = array();

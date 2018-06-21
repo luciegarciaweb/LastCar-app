@@ -89,6 +89,6 @@ abstract class Controller {
                 $$key = $value;
             }
         }
-        include './views/' . $pathToView . ".php";
+        include ROOT.'views/' . $pathToView . ".php";
     }
 }
